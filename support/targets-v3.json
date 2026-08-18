@@ -238,12 +238,12 @@
       "status": "in-development",
       "notes": "Galaxy S20 (Korean region) - Android 13 - Build TP1A.220624.014",
       "exploit": {
-        "url": "https://raw.githubusercontent.com/BuSung-dev/Root-My-Galaxy-Payloads/main/artifacts/x1q-G981NKSS8IYC2/cve-2026-43499-app.so",
+        "url": "https://raw.githubusercontent.com/sanghyun0909/s20-root-payloads-private/main/artifacts/x1q-G981NKSS8IYC2/cve-2026-43499-app.so",
         "size": 121800,
         "sha256": "df11560349b193772d8553ad3a5da5e49888c53688ed21f7f154b4dff6370da9"
       },
       "kernelsu": {
-        "url": "https://raw.githubusercontent.com/BuSung-dev/Root-My-Galaxy-Payloads/main/kernelsu/ksud-x1q-G981NKSS8IYC2-kdp",
+        "url": "https://raw.githubusercontent.com/sanghyun0909/s20-root-payloads-private/main/artifacts/x1q-G981NKSS8IYC2/cve-2026-43499-root",
         "size": 4800000
       }
     }
