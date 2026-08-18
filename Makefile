@@ -4,7 +4,16 @@ OUTDIR ?= build/$(TARGET)
 
 TARGET_HEADER := src/targets/$(TARGET)/target.h
 TARGET_INCLUDE := targets/$(TARGET)/target.h
-TARGET_CC := $(ANDROID_NDK_HOME)/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android$(API)-clang
+
+# Detect OS and set appropriate prebuilt path
+UNAME_S := $(shell uname -s)
+ifeq ($(UNAME_S),Darwin)
+  PREBUILT_OS := darwin-x86_64
+else
+  PREBUILT_OS := linux-x86_64
+endif
+
+TARGET_CC := $(ANDROID_NDK_HOME)/toolchains/llvm/prebuilt/$(PREBUILT_OS)/bin/aarch64-linux-android$(API)-clang
 
 ifeq ($(wildcard $(TARGET_CC)),)
 $(error set ANDROID_NDK_HOME to an Android NDK containing $(TARGET_CC))
