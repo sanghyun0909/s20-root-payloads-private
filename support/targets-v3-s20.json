@@ -1,0 +1,31 @@
+{
+  "schema": 3,
+  "targets": [
+    {
+      "name": "x1q-G981NKSS8IYC2",
+      "models": [
+        "SM-G981N"
+      ],
+      "kernelVersions": [
+        "4.19.113"
+      ],
+      "description": "Galaxy S20 (SM-G981N, Korean region) - Android 13 - Build TP1A.220624.014",
+      "exploit": {
+        "url": "https://raw.githubusercontent.com/main/artifacts/x1q-G981NKSS8IYC2/cve-2026-43499-app.so",
+        "sha256": "PLACEHOLDER_HASH_TO_BE_CALCULATED"
+      },
+      "kernelSu": {
+        "url": "https://raw.githubusercontent.com/main/artifacts/x1q-G981NKSS8IYC2/kernelsu.ko",
+        "sha256": "PLACEHOLDER_HASH_TO_BE_CALCULATED"
+      },
+      "rootHelper": {
+        "url": "https://raw.githubusercontent.com/main/artifacts/x1q-G981NKSS8IYC2/cve-2026-43499-root",
+        "sha256": "PLACEHOLDER_HASH_TO_BE_CALCULATED"
+      },
+      "status": "in-development",
+      "notes": "S20 4.19 kernel target - offsets require firmware validation",
+      "tested": false,
+      "buildDate": "2025-08-18"
+    }
+  ]
+}
